@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <label for="">Box1</label>
+        <br>
+        <input type="text" name="value1" [(ngModel)]="value1" placeholder="value1" (blur)="onValueChange()">
+        <br>  
+        <span *ngIf="value1 > 100">*Incorrect value</span>
+        <br><br>
+        </div>
+        <div class="mr-5 ml-5">
+            <label for="">Box2</label>
+            <br>
+            <input type="text" name="value2" [(ngModel)]="value2" placeholder="value2" (blur)="onValueChanges()">
+            <br>
+            <span *ngIf="value2 > 100">*Incorrect value</span>
+        </div>
+        <button class="btn btn-success" (click)="Oncreate()">CREATE</button>
+        <br><br>
+    
+        <canvas id="circleChart"></canvas>
+    </div>
+
+</div>
